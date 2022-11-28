@@ -3,13 +3,11 @@ Protected Class AttyWebContainer
 Inherits WebContainer
 	#tag Event
 		Sub Closed()
-		  //#Pragma BreakOnExceptions Off
-		  
 		  try
 		    
-		    //NB: Sono stati aggiunti i delegate perchè nel codice è possibile aggiungere il gestore degli eventi al webcontainer tramite
-		    //AddHandler sull'evento close. Se tale evento viene impostato da codice per la schermata di destinazione non può essere aggiungo agli eventi di chiusura
-		    //del JSPanel. Il riusltato è che non c'è altro modo per chiudere il dialog se il container viene chiuso
+		    //NB: Delegates were added because in the code you can add the event handler to the webcontainer via 
+		    //AddHandler on the close event. If that event is set by code for the target screen it cannot be added to the JSPanel close events. 
+		    //The result is that there is no other way to close the dialog if the container is closed
 		    
 		    if fnCloseDialog <> nil then
 		      fnCloseDialog.Invoke
@@ -43,14 +41,6 @@ Inherits WebContainer
 		End Sub
 	#tag EndEvent
 
-
-	#tag Method, Flags = &h0
-		Sub AggiornaDati(d as Dictionary)
-		  if fnUpdateDataDialog <> nil then
-		    fnUpdateDataDialog.Invoke(d)
-		  end if 
-		End Sub
-	#tag EndMethod
 
 	#tag DelegateDeclaration, Flags = &h0
 		Delegate Sub CloseDialog()
@@ -123,6 +113,14 @@ Inherits WebContainer
 		    
 		    RaiseEvent Resized
 		    
+		  end if 
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Sub InvokeUpdateDataDialog(d as Dictionary)
+		  if fnUpdateDataDialog <> nil then
+		    fnUpdateDataDialog.Invoke(d)
 		  end if 
 		End Sub
 	#tag EndMethod
