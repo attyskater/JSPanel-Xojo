@@ -15,6 +15,7 @@ Tested and working versions of JSPanel start from 4.11.4 up to 4.16.1 (latest cu
 - Create Progress Dialogs that remain visible until the indicated routine is completed
 - Create Progress Dialogs with messages that can be updated during the execution of a WebThread.
 - Ability to create Master and Slave Panels
+- Ability to create a dialog that contains HTML code
 
 Of course, not all the features of the base library are present, but only those that I have personally used in my own projects. It is possible to extend the functionality as desired.
 
@@ -26,6 +27,14 @@ Of course, not all the features of the base library are present, but only those 
 - Copy all variables and functions Present in the Session element
 - View how the library works via the examples present in the Class for Test folder
 
+## Screenshot
+![Palette Dialog](https://github.com/attyskater/JSPanel-Xojo/blob/main/images/Screenshot1.png)
+![Progress](https://github.com/attyskater/JSPanel-Xojo/blob/main/images/Screenshot2.png)
+![Msg Yes or No](https://github.com/attyskater/JSPanel-Xojo/blob/main/images/Screenshot3.png)
+![MasterAndSlave](https://github.com/attyskater/JSPanel-Xojo/blob/main/images/Screenshot4.png)
+![Modal](https://github.com/attyskater/JSPanel-Xojo/blob/main/images/Screenshot5.png)
+![Thread Progress](https://github.com/attyskater/JSPanel-Xojo/blob/main/images/Screenshot6.png)
+![HTML Dialog + Hint](https://github.com/attyskater/JSPanel-Xojo/blob/main/images/Screenshot7.png)
 ## Current Version : 2.0.0
 
 ![made with Xojo](https://xojo.com/account/mwx/mwx_long.png)
