@@ -288,7 +288,7 @@ Inherits WebSDKUIControl
 
 	#tag Method, Flags = &h21
 		Private Sub CaricaCSSEsterni()
-		  linkCSS.AddRow( "https://cdn.jsdelivr.net/npm/jspanel4@4.11.4/dist/jspanel.css" )
+		  linkCSS.AddRow( "https://cdn.jsdelivr.net/npm/jspanel4@4.16.1/dist/jspanel.css" )
 		  linkCSS.AddRow( "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" )
 		  
 		  
@@ -297,13 +297,13 @@ Inherits WebSDKUIControl
 
 	#tag Method, Flags = &h21
 		Private Sub CaricaJSEsterni()
-		  linkJS.AddRow( "https://cdn.jsdelivr.net/npm/jspanel4@4.11.4/dist/jspanel.js")
-		  linkJS.AddRow( "https://cdn.jsdelivr.net/npm/jspanel4@4.11.4/dist/extensions/modal/jspanel.modal.js")
-		  linkJS.AddRow( "https://cdn.jsdelivr.net/npm/jspanel4@4.11.4/dist/extensions/tooltip/jspanel.tooltip.js")
-		  linkJS.AddRow("https://cdn.jsdelivr.net/npm/jspanel4@4.11.4/dist/extensions/hint/jspanel.hint.js")
-		  linkJS.AddRow( "https://cdn.jsdelivr.net/npm/jspanel4@4.11.4/dist/extensions/layout/jspanel.layout.js")
-		  linkJS.AddRow( "https://cdn.jsdelivr.net/npm/jspanel4@4.11.4/dist/extensions/contextmenu/jspanel.contextmenu.js")
-		  linkJS.AddRow( "https://cdn.jsdelivr.net/npm/jspanel4@4.11.4/dist/extensions/dock/jspanel.dock.js")
+		  linkJS.AddRow( "https://cdn.jsdelivr.net/npm/jspanel4@4.16.1/dist/jspanel.js")
+		  linkJS.AddRow( "https://cdn.jsdelivr.net/npm/jspanel4@4.16.1/dist/extensions/modal/jspanel.modal.js")
+		  linkJS.AddRow( "https://cdn.jsdelivr.net/npm/jspanel4@4.16.1/dist/extensions/tooltip/jspanel.tooltip.js")
+		  linkJS.AddRow("https://cdn.jsdelivr.net/npm/jspanel4@4.16.1/dist/extensions/hint/jspanel.hint.js")
+		  linkJS.AddRow( "https://cdn.jsdelivr.net/npm/jspanel4@4.16.1/dist/extensions/layout/jspanel.layout.js")
+		  linkJS.AddRow( "https://cdn.jsdelivr.net/npm/jspanel4@4.16.1/dist/extensions/contextmenu/jspanel.contextmenu.js")
+		  linkJS.AddRow( "https://cdn.jsdelivr.net/npm/jspanel4@4.16.1/dist/extensions/dock/jspanel.dock.js")
 		  
 		End Sub
 	#tag EndMethod
