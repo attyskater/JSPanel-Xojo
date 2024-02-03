@@ -35,6 +35,11 @@ Of course, not all the features of the base library are present, but only those 
 ![Modal](https://github.com/attyskater/JSPanel-Xojo/blob/main/images/Screenshot5.png)
 ![Thread Progress](https://github.com/attyskater/JSPanel-Xojo/blob/main/images/Screenshot6.png)
 ![HTML Dialog + Hint](https://github.com/attyskater/JSPanel-Xojo/blob/main/images/Screenshot7.png)
-## Current Version : 2.0.0
+## Current Version : 2.1.0
+
+## Changelog from 2.0.0 to 2.1.0
+- Fix resize bug
+- Add minResizeHeight e minResizeWidth properties
+
 
 ![made with Xojo](https://xojo.com/account/mwx/mwx_long.png)

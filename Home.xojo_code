@@ -2,6 +2,7 @@
 Begin WebPage Home
    AllowTabOrderWrap=   True
    Compatibility   =   ""
+   ControlCount    =   0
    ControlID       =   ""
    Enabled         =   False
    Height          =   667
@@ -28,7 +29,6 @@ Begin WebPage Home
    _ImplicitInstance=   False
    _mDesignHeight  =   0
    _mDesignWidth   =   0
-   _mName          =   ""
    _mPanelIndex    =   -1
    Begin AttyWebJSPanel Dialog4
       AtPosition      =   ""
@@ -167,7 +167,7 @@ End
 	#tag Note, Name = LICENSE AttyWebJSPanel
 		The MIT License (MIT)
 		
-		Copyright (c) 2022 Attilio Punzi
+		Copyright (c) 2024 Attilio Punzi
 		
 		Permission is hereby granted, free of charge, to any person
 		obtaining a copy of this software and associated documentation
@@ -264,6 +264,14 @@ End
 	#tag EndEvent
 #tag EndEvents
 #tag ViewBehavior
+	#tag ViewProperty
+		Name="ControlCount"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Integer"
+		EditorType=""
+	#tag EndViewProperty
 	#tag ViewProperty
 		Name="_mPanelIndex"
 		Visible=false

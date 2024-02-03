@@ -56,7 +56,7 @@ Inherits WebContainer
 	#tag Method, Flags = &h0
 		Sub FireResize()
 		  
-		  if self.OldWidth > 0 AND self.Oldheight > 0 then
+		  if self.OldWidth > 0 OR self.Oldheight > 0 then
 		    
 		    for each c as WebUIControl in Controls
 		      
@@ -79,13 +79,7 @@ Inherits WebContainer
 		      
 		      
 		      if c.LockTop AND c.LockBottom then
-		        
 		        nuovaAltezza= self.Height -c.Top -spaziosotto
-		        'if c isA AttyWebTinyMCE then
-		        ''nuovaAltezza= self.Height -c.Top -spaziosotto-40-39
-		        'else
-		        'nuovaAltezza= self.Height -c.Top -spaziosotto
-		        'end if 
 		      else
 		        nuovaAltezza = c.Height
 		      end if 
@@ -169,6 +163,14 @@ Inherits WebContainer
 
 
 	#tag ViewBehavior
+		#tag ViewProperty
+			Name="ControlCount"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="Integer"
+			EditorType=""
+		#tag EndViewProperty
 		#tag ViewProperty
 			Name="_mPanelIndex"
 			Visible=false

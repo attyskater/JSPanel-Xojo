@@ -1,6 +1,7 @@
 #tag WebContainerControl
 Begin AttyWebContainer Example
    Compatibility   =   ""
+   ControlCount    =   0
    ControlID       =   ""
    Enabled         =   True
    Height          =   458
@@ -21,7 +22,6 @@ Begin AttyWebContainer Example
    Width           =   450
    _mDesignHeight  =   0
    _mDesignWidth   =   0
-   _mName          =   ""
    _mPanelIndex    =   -1
    Begin WebButton btnModal
       AllowAutoDisable=   False
@@ -496,6 +496,8 @@ End
 		  Dialog3.MinTop = 80
 		  Dialog3.Resize = True
 		  Dialog3.ButtonClose = True
+		  Dialog3.minResizeHeight = 500
+		  Dialog3.minResizeWidth = 500
 		  
 		  refTestContainer.LockLeft = True
 		  refTestContainer.LockTop = True
@@ -688,6 +690,14 @@ End
 	#tag EndEvent
 #tag EndEvents
 #tag ViewBehavior
+	#tag ViewProperty
+		Name="ControlCount"
+		Visible=false
+		Group="Behavior"
+		InitialValue=""
+		Type="Integer"
+		EditorType=""
+	#tag EndViewProperty
 	#tag ViewProperty
 		Name="_mPanelIndex"
 		Visible=false
