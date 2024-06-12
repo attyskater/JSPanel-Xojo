@@ -43,6 +43,7 @@ Begin AttyWebContainer Example
       LockVertical    =   False
       Scope           =   2
       TabIndex        =   0
+      TabStop         =   True
       Tooltip         =   ""
       Top             =   66
       Visible         =   True
@@ -69,6 +70,7 @@ Begin AttyWebContainer Example
       LockVertical    =   False
       Scope           =   2
       TabIndex        =   1
+      TabStop         =   True
       Tooltip         =   ""
       Top             =   20
       Visible         =   True
@@ -95,6 +97,7 @@ Begin AttyWebContainer Example
       LockVertical    =   False
       Scope           =   2
       TabIndex        =   2
+      TabStop         =   True
       Tooltip         =   ""
       Top             =   112
       Visible         =   True
@@ -121,6 +124,7 @@ Begin AttyWebContainer Example
       LockVertical    =   False
       Scope           =   2
       TabIndex        =   3
+      TabStop         =   True
       Tooltip         =   ""
       Top             =   158
       Visible         =   True
@@ -147,6 +151,7 @@ Begin AttyWebContainer Example
       LockVertical    =   False
       Scope           =   2
       TabIndex        =   4
+      TabStop         =   True
       Tooltip         =   ""
       Top             =   158
       Visible         =   True
@@ -173,6 +178,7 @@ Begin AttyWebContainer Example
       LockVertical    =   False
       Scope           =   2
       TabIndex        =   5
+      TabStop         =   True
       Tooltip         =   ""
       Top             =   158
       Visible         =   True
@@ -199,6 +205,7 @@ Begin AttyWebContainer Example
       LockVertical    =   False
       Scope           =   2
       TabIndex        =   6
+      TabStop         =   True
       Tooltip         =   ""
       Top             =   204
       Visible         =   True
@@ -225,6 +232,7 @@ Begin AttyWebContainer Example
       LockVertical    =   False
       Scope           =   2
       TabIndex        =   7
+      TabStop         =   True
       Tooltip         =   ""
       Top             =   297
       Visible         =   True
@@ -251,6 +259,7 @@ Begin AttyWebContainer Example
       LockVertical    =   False
       Scope           =   2
       TabIndex        =   8
+      TabStop         =   True
       Tooltip         =   ""
       Top             =   250
       Visible         =   True
@@ -277,6 +286,7 @@ Begin AttyWebContainer Example
       LockVertical    =   False
       Scope           =   2
       TabIndex        =   9
+      TabStop         =   True
       Tooltip         =   ""
       Top             =   343
       Visible         =   True
@@ -303,6 +313,7 @@ Begin AttyWebContainer Example
       LockVertical    =   False
       Scope           =   2
       TabIndex        =   10
+      TabStop         =   True
       Tooltip         =   ""
       Top             =   389
       Visible         =   True
@@ -338,6 +349,8 @@ End
 		  DialogChild.Resize = True
 		  DialogChild.ButtonClose = False
 		  DialogChild.ButtonMinimize = True
+		  DialogChild.syncMargins = True
+		  DialogChild.onparentresize = True
 		  
 		  if _p.Container <> nil AND _p.Container isA TestContainer then
 		    DialogChild.minimizeTo = TestContainer(_p.Container).Rectangle1.ControlID
